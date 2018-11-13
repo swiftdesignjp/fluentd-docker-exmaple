@@ -1,3 +1,4 @@
 mongo/
 nginx/log
+*.pem
 .DS_Store
