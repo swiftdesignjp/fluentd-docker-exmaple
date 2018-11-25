@@ -12,13 +12,13 @@ services:
     environment:
       FLUENTD_CONF: fluentd.conf
 
-  nginx:
-    image: nginx:stable
-    ports:
-      - 8080:80
-    volumes:
-      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/log:/var/log/nginx
+  # nginx:
+  #   image: nginx:stable
+  #   ports:
+  #     - 8080:80
+  #   volumes:
+  #     - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+  #     - ./nginx/log:/var/log/nginx
 
   h2o:
     image: lkwg82/h2o-http2-server
